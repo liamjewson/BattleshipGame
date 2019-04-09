@@ -25,3 +25,36 @@ H:\Labs\2018\BB\GameTemplate\bin\Debug\SwinGame.dll
 H:\Labs\2018\BB\GameTemplate\obj\x86\Debug-Windows\MyGameWin.csprojResolveAssemblyReference.cache
 H:\Labs\2018\BB\GameTemplate\obj\x86\Debug-Windows\MyGame.exe
 H:\Labs\2018\BB\GameTemplate\obj\x86\Debug-Windows\MyGame.pdb
+C:\Users\leema\Desktop\GameTemplate\bin\Debug\Resources\animations\startup.txt
+C:\Users\leema\Desktop\GameTemplate\bin\Debug\Resources\bundles\FileDialog.txt
+C:\Users\leema\Desktop\GameTemplate\bin\Debug\Resources\bundles\splash.txt
+C:\Users\leema\Desktop\GameTemplate\bin\Debug\Resources\fonts\arial.ttf
+C:\Users\leema\Desktop\GameTemplate\bin\Debug\Resources\fonts\cour.ttf
+C:\Users\leema\Desktop\GameTemplate\bin\Debug\Resources\fonts\maven_pro_regular.ttf
+C:\Users\leema\Desktop\GameTemplate\bin\Debug\Resources\images\fdFile.png
+C:\Users\leema\Desktop\GameTemplate\bin\Debug\Resources\images\fdFolder.png
+C:\Users\leema\Desktop\GameTemplate\bin\Debug\Resources\images\FileDialog_Active.png
+C:\Users\leema\Desktop\GameTemplate\bin\Debug\Resources\images\FileDialog_Background.png
+C:\Users\leema\Desktop\GameTemplate\bin\Debug\Resources\images\FileDialog_Inactive.png
+C:\Users\leema\Desktop\GameTemplate\bin\Debug\Resources\images\FileDialog_Scroll.png
+C:\Users\leema\Desktop\GameTemplate\bin\Debug\Resources\images\FileDialog_ScrollSmall.png
+C:\Users\leema\Desktop\GameTemplate\bin\Debug\Resources\images\Swinburne.jpg
+C:\Users\leema\Desktop\GameTemplate\bin\Debug\Resources\images\SwinGameAni.png
+C:\Users\leema\Desktop\GameTemplate\bin\Debug\Resources\panels\FileDialog.txt
+C:\Users\leema\Desktop\GameTemplate\bin\Debug\Resources\sounds\error.wav
+C:\Users\leema\Desktop\GameTemplate\bin\Debug\Resources\sounds\SwinGameStart.wav
+C:\Users\leema\Desktop\GameTemplate\bin\Debug\Resources\SwinGame.icns
+C:\Users\leema\Desktop\GameTemplate\bin\Debug\Resources\SwinGame.ico
+C:\Users\leema\Desktop\GameTemplate\bin\Debug\MyGame.exe.config
+C:\Users\leema\Desktop\GameTemplate\bin\Debug\MyGame.exe
+C:\Users\leema\Desktop\GameTemplate\bin\Debug\MyGame.pdb
+C:\Users\leema\Desktop\GameTemplate\bin\Debug\SwinGame.dll
+C:\Users\leema\Desktop\GameTemplate\obj\x86\Debug-Windows\MyGameWin.csproj.CoreCompileInputs.cache
+C:\Users\leema\Desktop\GameTemplate\obj\x86\Debug-Windows\MyGameWin.csproj.CopyComplete
+C:\Users\leema\Desktop\GameTemplate\obj\x86\Debug-Windows\MyGame.exe
+C:\Users\leema\Desktop\GameTemplate\obj\x86\Debug-Windows\MyGame.pdb
+C:\Users\leema\Desktop\GameTemplate\obj\x86\Debug-Windows\MyGameWin.csprojAssemblyReference.cache
+C:\Users\leema\Documents\GitHub\BattleshipGame\C# Battleships\obj\x86\Debug-Windows\MyGameWin.csprojAssemblyReference.cache
+C:\Users\leema\Documents\GitHub\BattleshipGame\C# Battleships\obj\x86\Debug-Windows\MyGameWin.csproj.CoreCompileInputs.cache
+C:\Users\leema\Documents\GitHub\BattleshipGame\C# Battleships\obj\x86\Debug-Windows\MyGame.exe
+C:\Users\leema\Documents\GitHub\BattleshipGame\C# Battleships\obj\x86\Debug-Windows\MyGame.pdb
