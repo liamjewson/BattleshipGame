@@ -58,3 +58,7 @@ C:\Users\leema\Documents\GitHub\BattleshipGame\C# Battleships\obj\x86\Debug-Wind
 C:\Users\leema\Documents\GitHub\BattleshipGame\C# Battleships\obj\x86\Debug-Windows\MyGameWin.csproj.CoreCompileInputs.cache
 C:\Users\leema\Documents\GitHub\BattleshipGame\C# Battleships\obj\x86\Debug-Windows\MyGame.exe
 C:\Users\leema\Documents\GitHub\BattleshipGame\C# Battleships\obj\x86\Debug-Windows\MyGame.pdb
+C:\Users\b\Documents\GitHub\BattleshipGame\C# Battleships\obj\x86\Debug-Windows\MyGameWin.csprojAssemblyReference.cache
+C:\Users\b\Documents\GitHub\BattleshipGame\C# Battleships\obj\x86\Debug-Windows\MyGameWin.csproj.CoreCompileInputs.cache
+C:\Users\b\Documents\GitHub\BattleshipGame\C# Battleships\obj\x86\Debug-Windows\MyGame.exe
+C:\Users\b\Documents\GitHub\BattleshipGame\C# Battleships\obj\x86\Debug-Windows\MyGame.pdb

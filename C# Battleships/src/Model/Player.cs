@@ -20,7 +20,7 @@ public class Player : IEnumerable<Ship>
 {
     protected static Random _Random = new Random();
 
-    private Dictionary<ShipName, Ship> _Ships = new Dictionary<ShipName, Ship>();
+    private static Dictionary<ShipName, Ship> _Ships = new Dictionary<ShipName, Ship>();
     private SeaGrid _playerGrid = new SeaGrid(_Ships);
     private ISeaGrid _enemyGrid;
     protected BattleShipsGame _game;
@@ -285,5 +285,10 @@ public class Player : IEnumerable<Ship>
             }
             while (!placementSuccessful);
         }
+    }
+
+    IEnumerator<Ship> IEnumerable<Ship>.GetEnumerator()
+    {
+        throw new NotImplementedException();
     }
 }
