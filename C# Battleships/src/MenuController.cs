@@ -79,7 +79,7 @@ static class MenuController
 	}
 
 	/// <summary>
-	/// Handles the processing of user input when the main menu is showing
+	/// Handles the processing of user input when the setup menu is showing
 	/// </summary>
 	public static void HandleSetupMenuInput()
 	{
@@ -87,7 +87,7 @@ static class MenuController
 		handled = HandleMenuInput(SETUP_MENU, 1, 1);
 
 		if (!handled) {
-			HandleMenuInput(MAIN_MENU, 0, 0);
+			HandleMenuInput(SETUP_MENU, 0, 0);
 		}
 	}
 
