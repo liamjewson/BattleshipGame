@@ -9,7 +9,28 @@ using SwinGameSDK;
 
 public static class GameResources
 {
+	 public static bool Muted = false;//radd
 
+    public static void MuteButtonPressed() //radd
+    {
+        Muted = !Muted;
+
+        if (Muted) 
+        {
+            foreach (var kvp in _Sounds) 
+            {
+                Audio.StopSoundEffect(kvp.Value);
+            }
+
+            Audio.StopSoundEffect(_StartSound);
+            Audio.SetMusicVolume(0f);
+        } 
+        else 
+        {
+            Audio.SetMusicVolume(1f);
+            Audio.PlaySoundEffect(_StartSound);
+        }
+    }
 	private static void LoadFonts()
 	{
 		NewFont("ArialLarge", "arial.ttf", 80);
@@ -21,7 +42,7 @@ public static class GameResources
 	private static void LoadImages()
 	{
 		//Backgrounds
-		NewImage("Menu", "main_page.jpg");
+		NewImage("Menu", "bg.jpg");
 		NewImage("Discovery", "discover.jpg");
 		NewImage("Deploy", "deploy.jpg");
 
@@ -59,6 +80,7 @@ public static class GameResources
 	private static void LoadMusic()
 	{
 		NewMusic("Background", "horrordrone.mp3");
+		NewMusic ("Off", "off.wav");//radd
 	}
 
 	/// <summary>
@@ -102,7 +124,14 @@ public static class GameResources
 
 	public static Music GameMusic(string music)
 	{
-		return _Music[music];
+		if(GameController.Music)//radd
+		{
+			return _Music[music];
+		}
+		else
+		{
+			return _Music ["Off"];
+		}
 	}
 
 	private static Dictionary<string, Bitmap> _Images = new Dictionary<string, Bitmap>();

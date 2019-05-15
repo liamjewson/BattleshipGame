@@ -27,7 +27,9 @@ static class MenuController
 			"PLAY",
 			"SETUP",
 			"SCORES",
+			"MUTE",//radd
 			"QUIT"
+			
 		},
 		new string[] {
 			"RETURN",
@@ -44,7 +46,7 @@ static class MenuController
 	private const int MENU_TOP = 575;
 	private const int MENU_LEFT = 30;
 	private const int MENU_GAP = 0;
-	private const int BUTTON_WIDTH = 75;
+	private const int BUTTON_WIDTH = 80;
 	private const int BUTTON_HEIGHT = 15;
 	private const int BUTTON_SEP = BUTTON_WIDTH + MENU_GAP;
 
@@ -53,11 +55,12 @@ static class MenuController
 	private const int GAME_MENU = 1;
 
 	private const int SETUP_MENU = 2;
+	private const int MUSIC_MENU = 3;//radd
 	private const int MAIN_MENU_PLAY_BUTTON = 0;
 	private const int MAIN_MENU_SETUP_BUTTON = 1;
 	private const int MAIN_MENU_TOP_SCORES_BUTTON = 2;
-
-	private const int MAIN_MENU_QUIT_BUTTON = 3;
+	private const int MAIN_MENU_MUTE_BUTTON = 3;//radd
+	private const int MAIN_MENU_QUIT_BUTTON = 4;
 	private const int SETUP_MENU_EASY_BUTTON = 0;
 	private const int SETUP_MENU_MEDIUM_BUTTON = 1;
 	private const int SETUP_MENU_HARD_BUTTON = 2;
@@ -101,7 +104,15 @@ static class MenuController
 	{
 		HandleMenuInput(GAME_MENU, 0, 0);
 	}
+/*public static void HandleMusicMenuInput ()//radd
+	{
+		bool handled = false;
+		handled = HandleMenuInput (MUSIC_MENU, 1, 3);
 
+		if (!handled) {
+			HandleMenuInput (MAIN_MENU, 0, 0);
+		}
+	}*/
 	/// <summary>
 	/// Handles input for the specified menu.
 	/// </summary>
@@ -109,6 +120,7 @@ static class MenuController
 	/// <param name="level">the vertical level of the menu</param>
 	/// <param name="xOffset">the xoffset of the menu</param>
 	/// <returns>false if a clicked missed the buttons. This can be used to check prior menus.</returns>
+	
 	private static bool HandleMenuInput(int menu, int level, int xOffset)
 	{
 		if (SwinGame.KeyTyped(KeyCode.vk_ESCAPE)) {
@@ -200,10 +212,12 @@ static class MenuController
 		int i = 0;
 		for (i = 0; i <= _menuStructure[menu].Length - 1; i++) {
 			int btnLeft = 0;
+			string bton = _menuStructure [menu] [i];
 			btnLeft = MENU_LEFT + BUTTON_SEP * (i + xOffset);
 			//SwinGame.FillRectangle(Color.White, btnLeft, btnTop, BUTTON_WIDTH, BUTTON_HEIGHT)
 			SwinGame.DrawTextLines(_menuStructure[menu][i], MENU_COLOR, Color.Black, GameResources.GameFont("Menu"), FontAlignment.AlignCenter, btnLeft + TEXT_OFFSET, btnTop + TEXT_OFFSET, BUTTON_WIDTH, BUTTON_HEIGHT);
-
+if (GameResources.Muted && i == MAIN_MENU_MUTE_BUTTON)//radd
+		   bton = "UNMUTE";
 			if (SwinGame.MouseDown(MouseButton.LeftButton) & IsMouseOverMenu(i, level, xOffset)) {
 				SwinGame.DrawRectangle(HIGHLIGHT_COLOR, btnLeft, btnTop, BUTTON_WIDTH, BUTTON_HEIGHT);
 			}
@@ -271,6 +285,13 @@ static class MenuController
 			case MAIN_MENU_TOP_SCORES_BUTTON:
 				GameController.AddNewState(GameState.ViewingHighScores);
 				break;
+				
+		  case MAIN_MENU_MUTE_BUTTON:  //radd
+		
+		    GameResources.MuteButtonPressed ();
+		    break;
+		
+
 			case MAIN_MENU_QUIT_BUTTON:
 				GameController.EndCurrentState();
 				break;

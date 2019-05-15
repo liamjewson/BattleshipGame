@@ -14,6 +14,9 @@ using SwinGameSDK;
 /// </summary>
 public static class GameController
 {
+	private static String _music = "BGM1";
+	public static Boolean Musicstate;
+	public static Boolean Music = true;
 
 	private static BattleShipsGame _theGame;
 	private static Player _human;
