@@ -12,6 +12,10 @@ using SwinGameSDK;
 /// </summary>
 static class DiscoveryController
 {
+	private const int PLAY_BUTTON_LEFT = 693;
+	private const int TOP_BUTTONS_TOP = 72;
+	private const int PLAY_BUTTON_WIDTH = 80;
+	private const int TOP_BUTTONS_HEIGHT = 46;
 
 	/// <summary>
 	/// Handles input during the discovery phase of the game.
@@ -29,6 +33,9 @@ static class DiscoveryController
 		if (SwinGame.MouseClicked(MouseButton.LeftButton)) {
 			DoAttack();
 		}
+		if (UtilityFunctions.IsMouseInRectangle(PLAY_BUTTON_LEFT, TOP_BUTTONS_TOP, PLAY_BUTTON_WIDTH, TOP_BUTTONS_HEIGHT) {
+				GameController.AddNewState(GameState.ViewingGameMenu);
+			} 
 	}
 
 	/// <summary>
@@ -69,6 +76,7 @@ static class DiscoveryController
 			UtilityFunctions.DrawField(GameController.HumanPlayer.EnemyGrid, GameController.ComputerPlayer, false);
 		}
 
+		SwinGame.DrawBitmap(GameResources.GameImage("PlayButton"), PLAY_BUTTON_LEFT, TOP_BUTTONS_TOP);
 		UtilityFunctions.DrawSmallField(GameController.HumanPlayer.PlayerGrid, GameController.HumanPlayer);
 		UtilityFunctions.DrawMessage();
 
