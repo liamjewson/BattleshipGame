@@ -34,7 +34,7 @@ static class DiscoveryController
 			DoAttack();
 		}
 		
-		if (UtilityFunctions.IsMouseInRectangle(QUIT_BUTTON_LEFT, TOP_BUTTONS_TOP, QUIT_BUTTON_WIDTH, TOP_BUTTONS_HEIGHT) {
+		if (UtilityFunctions.IsMouseInRectangle(QUIT_BUTTON_LEFT, TOP_BUTTONS_TOP, QUIT_BUTTON_WIDTH, TOP_BUTTONS_HEIGHT)) {
 			if (SwinGame.MouseClicked(MouseButton.LeftButton)) {
 				GameController.AddNewState(GameState.ViewingGameMenu);
 			}
@@ -80,7 +80,7 @@ static class DiscoveryController
 			UtilityFunctions.DrawField(GameController.HumanPlayer.EnemyGrid, GameController.ComputerPlayer, false);
 		}
 
-		SwinGame.DrawBitmap(GameResources.GameImage("QuitButton"), PLAY_BUTTON_LEFT, TOP_BUTTONS_TOP);
+		SwinGame.DrawBitmap(GameResources.GameImage("QuitButton"), QUIT_BUTTON_LEFT, TOP_BUTTONS_TOP);
 		UtilityFunctions.DrawSmallField(GameController.HumanPlayer.PlayerGrid, GameController.HumanPlayer);
 		UtilityFunctions.DrawMessage();
 
