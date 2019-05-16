@@ -35,8 +35,11 @@ static class DiscoveryController
 		}
 		
 		if (UtilityFunctions.IsMouseInRectangle(QUIT_BUTTON_LEFT, TOP_BUTTONS_TOP, QUIT_BUTTON_WIDTH, TOP_BUTTONS_HEIGHT) {
+			if (SwinGame.MouseClicked(MouseButton.LeftButton)) {
 				GameController.AddNewState(GameState.ViewingGameMenu);
-			} 
+			}
+				
+		} 
 	}
 
 	/// <summary>
