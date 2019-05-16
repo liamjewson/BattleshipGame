@@ -14,6 +14,7 @@ public class AttackResult
 	private Ship _Ship;
 	private string _Text;
 	private int _Row;
+    private string _Remaining;
 
 	private int _Column;
 	/// <summary>
