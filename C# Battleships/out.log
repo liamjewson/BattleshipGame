@@ -6,7 +6,3 @@ This compiler is provided as part of the Microsoft (R) .NET Framework, but only 
 
 src\Model\AIPlayer.cs(20,18): warning CS0660: 'AIPlayer.Location' defines operator == or operator != but does not override Object.Equals(object o)
 src\Model\AIPlayer.cs(20,18): warning CS0661: 'AIPlayer.Location' defines operator == or operator != but does not override Object.GetHashCode()
-src\Model\SeaGrid.cs(175,57): error CS0019: Operator '+' cannot be applied to operands of type 'string' and 'method group'
-src\Model\SeaGrid.cs(182,50): error CS0019: Operator '+' cannot be applied to operands of type 'string' and 'method group'
-src\Model\SeaGrid.cs(189,82): error CS0019: Operator '+' cannot be applied to operands of type 'string' and 'method group'
-src\Model\SeaGrid.cs(193,48): error CS0019: Operator '+' cannot be applied to operands of type 'string' and 'method group'

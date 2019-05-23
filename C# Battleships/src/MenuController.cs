@@ -142,12 +142,12 @@ static class MenuController
 	{
 		//Clears the Screen to Black
 		//SwinGame.DrawText("Main Menu", Color.White, GameFont("ArialLarge"), 50, 50)
- 		string[] instructions = { "Battle Ships Instructions", "1.Position you ships on the board" , "2.Press play","3.Use the large gird to try to guess where enemy ships are","4.The ememy will try to guess where your ships are, this can be seen in the smaller grid" , "5.Each player goes turn for turn ", "6.If a guess is correct then the player gets another turn"
+ 		string[] instructions = { "Battle Ships Instructions:", "1. Position your ships on the board" , "2. Press play","3. Use the large grid to try to guess where enemy ships are","4. The ememy will try to guess where your ships are, this can be seen in the smaller grid" , "5. Each player goes turn for turn ", "6. If a guess is correct then the player gets another turn"
             	, "7.The first player to destory all of the opponets ships is the winner"};
        		int ypos = 50;
 		for (int i = 0; i < instructions.Length; i++)
         	{
-            		SwinGame.DrawText(instructions[i] , Color.White, 50, ypos);
+                SwinGame.DrawText(instructions[i] , Color.White, SwinGame.LoadFont(SwinGame.PathToResource("square.ttf", ResourceKind.FontResource), 14), 50, ypos);
           		ypos = ypos + 15;
       		}
 		DrawButtons(MAIN_MENU);
